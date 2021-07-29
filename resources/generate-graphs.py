@@ -46,7 +46,7 @@ def filter_on_label(unfiltered, label, limit):
 def make_chart(results, label, full_label, entries):
     results = filter_on_label(results, label, entries)
     qc = QuickChart()
-    qc.width = 800
+    qc.width = 300
     qc.height = 300
     qc.config = {
         "encoding": "url",
