@@ -1,12 +1,11 @@
-name: Update README
-
+name: Speedtest
 on:
   workflow_dispatch:
   schedule:
     - cron: "* */2 * * *"
 
 jobs:
-  benchmark-build-agents:
+  speedtest:
     container:
       image: python:3.8-buster
     runs-on: ubuntu-latest
