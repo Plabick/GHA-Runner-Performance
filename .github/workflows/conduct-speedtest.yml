@@ -57,8 +57,8 @@ jobs:
       
       - name: Publish Changes
         run: |
-             git config --local user.email "peterlabick@gmail.com" 
-             git config --local user.name "plabick"
-             git add history/speed-test.csv README.md
+             git config --local user.email ${{secrets.EMAIL}}
+             git config --local user.name  ${{secrets.USERNAME}}
+             git add ${{env.history_file}} README.md
              git commit -m "Update Speed Test History" 
-             git push origin master || git pull --allow-unrelated-histories && git push origin master      
+             git push origin main || git pull --allow-unrelated-histories && git push origin main      
