@@ -1,1 +1,65 @@
+name: Update README
 
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "* */2 * * *"
+
+jobs:
+  benchmark-build-agents:
+    container:
+      image: python:3.8-buster
+    runs-on: ubuntu-latest
+    env:
+      history_file: 'history/internet-speed-test.csv'
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Get Time From Internet
+        id: time
+        uses: Plabick/Remote-Time-Action@V1.0
+        with:
+          timezone: EST
+      
+      - name: Install Dependencies 
+        run: pip3 install quickchart.io speedtest-cli
+
+      - name: Conduct Speedtest
+        id: speedtest
+        run: python3 ./resources/conduct-speedtest.py ${{env.history_file}} ${{steps.time.outputs.unixTime}}
+     
+      - name: Generate Graphs
+        id: graphs
+        run: python3 ./resources/generate-graphs.py ${{env.history_file}} ${{steps.time.outputs.unixTime}}
+      
+      - name: Update Readme
+        id: readme
+        run: |
+          cat << EOF > README.md
+          # Github Hosted Action Runner Network Performance Tracking
+          A record of Github Action Runner network performance over time
+          ### Latest Metrics
+          ${{ steps.speedtest.outputs.upload }} ${{ steps.speedtest.outputs.download }} ${{ steps.speedtest.outputs.ping }}
+          ### Historical Data
+          #### Last 24 Hours 
+           ${{ steps.graphs.outputs.uploadChart12 }}
+           ${{ steps.graphs.outputs.downloadChart12 }}
+           ${{ steps.graphs.outputs.pingChart12 }}
+          #### Last Week
+           ${{ steps.graphs.outputs.uploadChart84 }}
+           ${{ steps.graphs.outputs.downloadChart84 }}
+           ${{ steps.graphs.outputs.pingChart84 }}
+          #### Last Month
+           ${{ steps.graphs.outputs.uploadChart336 }}
+           ${{ steps.graphs.outputs.downloadChart336 }}
+           ${{ steps.graphs.outputs.pingChart336 }}
+          EOF
+        shell: bash
+      
+      - name: Publish Changes
+        run: |
+             git config --local user.email "peterlabick@gmail.com" 
+             git config --local user.name "plabick"
+             git add history/speed-test.csv README.md
+             git commit -m "Update Speed Test History" 
+             git push origin master || git pull --allow-unrelated-histories && git push origin master      
