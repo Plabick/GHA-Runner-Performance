@@ -1,5 +1,5 @@
 # Github Hosted Action Runner Network Performance Tracking
-A record of Github Action Runner network performance over time
+A record of Github's Action Runner network performance
 ### Latest Metrics
 ![badge](https://img.shields.io/badge/Upload%20Speed-1283.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Download%20Speed-1032.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Ping-16.0%20ms-blue?style=flat-square&logo=appveyor)
 ### Historical Data
