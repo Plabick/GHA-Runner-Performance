@@ -13,20 +13,6 @@ def read_history_file(file_path):
             csv_contents[int(row[0])] = {"upload": float(row[1]), "download": float(row[2]), "ping": float(row[3])}
     return csv_contents
 
-def conduct_network_speed_test():
-    st = speedtest.Speedtest()
-    print("----Testing Download Speed----")
-    download = round(bits_to_megabits(st.download()), 0)
-    print(f"Download Speed: {download} megabits/s")
-    print("----Testing Upload Speed----")
-    upload = round(bits_to_megabits(st.upload()), 0)
-    print(f"Upload Speed: {upload} megabits/s")
-    print("----Testing Ping----")
-    st.get_servers([])
-    ping = round(st.results.ping, 0)
-    print(f"Ping: {ping} ms")
-    return download, upload, ping
-
 
 def readable_date(epoch_time):
     return datetime.datetime.fromtimestamp(epoch_time).strftime("%m/%d, %H:%M")
@@ -81,13 +67,13 @@ if __name__ == "__main__":
     upload_chart_12 = make_chart(history, "upload", "Upload Speed, Mb/s", 12)
     download_chart_12 = make_chart(history, "download", "Download Speed, Mb/s", 12)
     ping_chart_12 = make_chart(history, "ping", "Ping, ms", 12)
-    
+
     upload_chart_84 = make_chart(history, "upload", "Upload Speed, Mb/s", 84)
     download_chart_84 = make_chart(history, "download", "Download Speed, Mb/s", 84)
     ping_chart_84 = make_chart(history, "ping", "Ping, ms", 84)
-    
+
     upload_chart_336 = make_chart(history, "upload", "Upload Speed, Mb/s", 336)
-    download_chart_336 = make_chart(history, "download", "Download Speed, Mb/s",336)
+    download_chart_336 = make_chart(history, "download", "Download Speed, Mb/s", 336)
     ping_chart_336 = make_chart(history, "ping", "Ping, ms", 336)
 
     print(f"::set-output name=uploadChart12::{upload_chart_12}")
@@ -96,6 +82,6 @@ if __name__ == "__main__":
     print(f"::set-output name=uploadChart84::{upload_chart_84}")
     print(f"::set-output name=downloadChart84::{download_chart_84}")
     print(f"::set-output name=pingChart84::{ping_chart_84}")
-    print(f"::set-output name=uploadChart336:{upload_chart_336}")
+    print(f"::set-output name=uploadChart336::{upload_chart_336}")
     print(f"::set-output name=downloadChart336::{download_chart_336}")
     print(f"::set-output name=pingChart336::{ping_chart_336}")
