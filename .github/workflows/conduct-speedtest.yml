@@ -35,8 +35,8 @@ jobs:
         id: readme
         run: |
           cat << EOF > README.md
-          # Github Hosted Action Runner Network Performance Tracking
-          A record of Github Action Runner network performance over time
+          # Github Action Runner Network Performance 
+          A record of Github's Action Runners network speed over time. Updated every 2 hours
           ### Latest Metrics
           ${{ steps.speedtest.outputs.upload }} ${{ steps.speedtest.outputs.download }} ${{ steps.speedtest.outputs.ping }}
           ### Historical Data
