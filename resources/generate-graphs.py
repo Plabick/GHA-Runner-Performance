@@ -66,7 +66,7 @@ def make_chart(results, label, full_label, entries):
             }
         }
     }
-    return f"![{label}]({qc.get_url()})"
+    return f"![{label}]({qc.get_short_url()})"
 
 
 def metric_badge(label, metric, unit):
