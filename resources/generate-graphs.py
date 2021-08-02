@@ -49,7 +49,7 @@ def make_chart(results, label, full_label, entries):
                 "xAxes": [{
                     "type": 'time',
                     "displayFormats": {
-                        'day': 'MMM DD'
+                        'day': 'HH DD'
                     }
                 }]
             }
