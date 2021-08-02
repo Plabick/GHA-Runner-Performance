@@ -25,7 +25,7 @@ def filter_on_label(unfiltered, label, limit):
         result[readable_date(key)] = unfiltered[key][label]
         count += 1
         if count > limit:
-            continue
+            break
     return result
 
 
