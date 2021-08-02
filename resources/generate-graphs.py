@@ -1,7 +1,6 @@
 import csv
 import datetime
 import sys
-import speedtest
 from quickchart import QuickChart
 
 
@@ -49,7 +48,8 @@ def make_chart(results, label, full_label, entries):
                 "xAxes": [{
                     "type": 'time',
                     "displayFormats": {
-                        'day': 'HH DD'
+                        "minUnit":"hour",
+                        'hour': "dddd, MMMM Do YYYY, h:mm:ss a"
                     }
                 }]
             }
