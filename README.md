@@ -1,17 +1,17 @@
 # Github Action Runner Network Performance 
 A record of Github's Action Runners network speed over time. Updated every 2 hours
 ### Latest Metrics
-![badge](https://img.shields.io/badge/Upload%20Speed-2031.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Download%20Speed-1263.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Ping-11.0%20ms-blue?style=flat-square&logo=appveyor)
+![badge](https://img.shields.io/badge/Upload%20Speed-2555.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Download%20Speed-1407.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Ping-12.0%20ms-blue?style=flat-square&logo=appveyor)
 ### Historical Data
 #### Last 24 Hours 
- ![upload](https://quickchart.io/chart/render/zf-d5c283fa-596e-4921-a9d3-3fc136b67109)
- ![download](https://quickchart.io/chart/render/zf-febc4fda-017a-4cb0-9858-dbdcf70c14d3)
- ![ping](https://quickchart.io/chart/render/zf-dde26d9f-a973-469d-bf87-cb7329571418)
+ ![upload](https://quickchart.io/chart/render/zf-f2da2280-c897-4c87-a320-7692a3648086)
+ ![download](https://quickchart.io/chart/render/zf-d6e72b3b-4667-4dfb-9ce6-5ffffc4fec72)
+ ![ping](https://quickchart.io/chart/render/zf-f707b0f9-cd0a-4a15-bf1b-93c27d4eb97a)
 #### Last Week
- ![upload](https://quickchart.io/chart/render/zf-3f8c0b3d-69a5-42a8-9992-efb0b8f32346)
- ![download](https://quickchart.io/chart/render/zf-a2f4e99d-e5d5-454c-bce3-c4a971b0a0ab)
- ![ping](https://quickchart.io/chart/render/zf-e9499364-52db-4063-894d-8cefa9abadf1)
+ ![upload](https://quickchart.io/chart/render/zf-1f395a3c-8a2d-4395-a5d0-fbf24d8e7d04)
+ ![download](https://quickchart.io/chart/render/zf-a99cd7c4-0655-49a3-a211-e46006d7224a)
+ ![ping](https://quickchart.io/chart/render/zf-7a29b6e3-d5f2-4bfe-a9be-f6796416f180)
 #### Last Month
- ![upload](https://quickchart.io/chart/render/zf-8ab44b70-af99-4af6-97bd-d2e22f1880d6)
- ![download](https://quickchart.io/chart/render/zf-1c74ccff-3a19-431f-926a-2f3000389601)
- ![ping](https://quickchart.io/chart/render/zf-9c282c12-675e-4e83-9795-b35007b205dd)
+ ![upload](https://quickchart.io/chart/render/zf-e05efbac-c652-430a-a5cc-39041f2d39fb)
+ ![download](https://quickchart.io/chart/render/zf-003e9802-b419-4473-aaf0-5c9b0bb39625)
+ ![ping](https://quickchart.io/chart/render/zf-13b4462f-b959-4589-994d-1c859b0e288f)
