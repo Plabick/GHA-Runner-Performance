@@ -14,7 +14,7 @@ def read_history_file(file_path):
 
 
 def readable_date(epoch_time):
-    gmt_to_est = 14400
+    gmt_to_est = 18000
     corrected_time = epoch_time - gmt_to_est
     return datetime.datetime.fromtimestamp(corrected_time).strftime("%m/%d, %H:%M")
 
