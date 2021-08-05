@@ -14,7 +14,9 @@ def read_history_file(file_path):
 
 
 def readable_date(epoch_time):
-    return datetime.datetime.fromtimestamp(epoch_time).strftime("%m/%d, %H:%M")
+    gmt_to_est = 14400
+    corrected_time = epoch_time - gmt_to_est
+    return datetime.datetime.fromtimestamp(corrected_time).strftime("%m/%d, %H:%M")
 
 
 def filter_on_label(unfiltered, label, limit):
