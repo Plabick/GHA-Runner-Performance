@@ -48,10 +48,6 @@ jobs:
            ${{ steps.graphs.outputs.uploadChart84 }}
            ${{ steps.graphs.outputs.downloadChart84 }}
            ${{ steps.graphs.outputs.pingChart84 }}
-          #### Last Month
-           ${{ steps.graphs.outputs.uploadChart336 }}
-           ${{ steps.graphs.outputs.downloadChart336 }}
-           ${{ steps.graphs.outputs.pingChart336 }}
           EOF
         shell: bash
       
