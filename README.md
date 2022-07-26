@@ -1,13 +1,13 @@
 # Github Action Runner Network Performance 
 A record of Github's Action Runners network speed over time. Updated every 2 hours
 ### Latest Metrics
-![badge](https://img.shields.io/badge/Upload%20Speed-2745.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Download%20Speed-1540.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Ping-17.0%20ms-blue?style=flat-square&logo=appveyor)
+![badge](https://img.shields.io/badge/Upload%20Speed-2564.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Download%20Speed-1349.0%20Mb%2Fs-blue?style=flat-square&logo=appveyor) ![badge](https://img.shields.io/badge/Ping-25.0%20ms-blue?style=flat-square&logo=appveyor)
 ### Historical Data
 #### Last 24 Hours 
- ![upload](https://quickchart.io/chart/render/sf-064831d4-a5b1-4c9c-9275-9a0e1075ac6a)
- ![download](https://quickchart.io/chart/render/sf-38894668-2d50-45bf-9abd-274105dadf60)
- ![ping](https://quickchart.io/chart/render/sf-0dc7d4e4-e995-443a-ab41-20c2535cdefb)
+ ![upload](https://quickchart.io/chart/render/sf-e5ef270c-0f83-4738-92d4-288baca8acc6)
+ ![download](https://quickchart.io/chart/render/sf-38ae872b-b8d8-4a28-b623-7188d0f4e0ac)
+ ![ping](https://quickchart.io/chart/render/sf-8c9f6f62-9b73-4e96-ac17-6ad08601ff6d)
 #### Last Week
- ![upload](https://quickchart.io/chart/render/sf-4da6d6cc-2a21-4b2b-a07c-12d3d254f99c)
- ![download](https://quickchart.io/chart/render/sf-0d1086f5-29a6-469b-bb7d-4b7ece8881ba)
- ![ping](https://quickchart.io/chart/render/sf-b7938c58-e810-4ecc-b7ae-8c0f35bff93e)
+ ![upload](https://quickchart.io/chart/render/sf-6b567de9-2156-4ad4-8671-a5afaed3ee94)
+ ![download](https://quickchart.io/chart/render/sf-18e0b2d3-c00a-436a-89d1-ae67c7b3f385)
+ ![ping](https://quickchart.io/chart/render/sf-f277460a-f08f-4241-8d04-67c768bd96f5)
